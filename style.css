@@ -87,10 +87,95 @@ body{
 .container main{
     width: 100%;
     height: calc(100vh - 70px);
-    background-image: url(model.jpg);
+    background-image: url(./image/lala.png);
     background-repeat: no-repeat;
     background-position: right center;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+main .infoText{
+    padding: 0 8%;
+}
+
+.infoText p{
+    color: #79747b;
+    font-size: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.infoText h1{
+    color: #dedce1;
+    font-size: 50px;
+    padding: 8px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #333, -2px -2px 2px #333;
+}
+.infoText h1 span{
+    color: yellow;
+    padding-left: 10px;
+}
+
+.infoText button {
+    padding: 10px 12px;
+    border-radius: 1px solid #79747b;
+    border-radius: 20px;
+    outline: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #79747b;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.infoText button:hover{
+    color: yellow;
+}
+.socialMediaIcons{
+    position: absolute;
+    bottom: 60px;
+    left: 8%;
+}
+.socialMediaIcons a i{
+    font-size: 24px;
+    padding-right: 20px;
+    color: #dedce1;
+    transition: 0.4s;
+}
+.socialMediaIcons a i:hover{
+    color: yellow;
+    transform: scale(1.2);
+}
+
+@media(max-width: 768px){
+    .menu #menuBtn{
+        display: block;
+    }
+    .menu ul{
+        position: fixed;
+        width: 250px;
+        height: calc(100vh - 70px);
+        top: 70px;
+        right: 0;
+        background-color: #232323;
+        border-radius: 30% 0 0 80%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-bottom: 1px solid black;
+        transition: right 0.4s cubic-bezier(1, 0.2, 0.2, 1);
+    }
+    .menu ul li{
+        padding: 20px;
+        letter-spacing: 2px;
+    }
+
+    .menu ul li:nth-child(1){
+        margin-top: 30px;
+    }
 }
