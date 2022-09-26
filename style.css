@@ -178,4 +178,22 @@ main .infoText{
     .menu ul li:nth-child(1){
         margin-top: 30px;
     }
+
+    .container .menu{
+        background-color: #232323;
+    }
+    .container main{
+        background-position: center;
+    }
+
+    #menuBtn.active .bar:nth-child(2){
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    #menuBtn.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    #menuBtn.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }
